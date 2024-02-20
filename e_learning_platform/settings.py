@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-p=es-bmd7ia0qepy((wg_g3su2(#i%f6wvha0q@$b5bnjxnmv%
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://e-school-api.onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['https://e-school-api.onrender.com','https://*.127.0.0.1']
 CORS_ALLOW_ALL_ORIGINS = True
 
 
