@@ -7,6 +7,7 @@ class TopicSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CourseSerializer(serializers.ModelSerializer):
+    topics_name = serializers.StringRelatedField(source='topics', many=True)
     class Meta:
         model = CourseModel
-        fields = '__all__'
+        fields = ['id','teacher', 'image', 'title', 'topics', 'topics_name', 'description', 'price', 'discount', 'date']
